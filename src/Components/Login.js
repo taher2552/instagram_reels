@@ -11,6 +11,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import Card from '@mui/material/Card';
 import instaLogo from '../images/insta_logo.jpg';
 import { Button, CardActions, CardContent, TextField } from "@mui/material";
+import Box from '@mui/material/Box';
 
 
 
@@ -64,14 +65,23 @@ export default class Login extends Component {
           </div>
 
           <CardContent>
-            <TextField label="Email" variant="outlined" fullWidth={true} onChange={(e)=> this.setState({ email: e.target.value})}/>
-            <TextField label="Password" type="password" variant="outlined" fullWidth={true} onChange={(e)=> this.setState({password: e.target.value})}/>
+            <Box m={2}>
+            <TextField label="Email"  variant="outlined" fullWidth={true} onChange={(e)=> this.setState({ email: e.target.value})}/>
+            </Box>
+            <Box m={2}>
+            <TextField label="Password" className="password_input" type="password" variant="outlined" fullWidth={true} onChange={(e)=> this.setState({password: e.target.value})}/> 
+            </Box>
           </CardContent>
 
-          <CardActions>
-            <Button color="primary" fullWidth={true} variant="contained" onClick={this.handleClick}> Log in </Button> 
-            <Button color="primary" fullWidth={true} variant="contained" onClick={this.handleGoogleClick}> Login with google </Button>
+          <CardActions className="buttons">
+            <Button color="primary"  fullWidth={true} variant="contained" onClick={this.handleClick}> Log in </Button> 
+            {/* <Button color="primary" fullWidth={true} variant="contained" onClick={this.handleGoogleClick}> Login with google </Button> */}
           </CardActions>
+        </Card>
+
+        <Card variant="outlined" className="card2">
+        <p className="no_account">Don't have an account? <span className="sign_up">Sign up</span></p>
+      
         </Card>
         </div>
       </div>

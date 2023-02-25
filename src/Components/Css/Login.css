@@ -18,3 +18,22 @@
     left:135px;
 }
 
+.sign_up{
+    color:blue;
+    cursor: pointer;
+   
+}
+
+.card2{
+    margin-top: 10px;
+}
+
+
+
+.no_account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
