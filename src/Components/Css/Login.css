@@ -1,0 +1,19 @@
+.loginWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.imgWrapper{
+    height: 623px;
+    width: 520px;
+    margin-top: 8vh;
+    position: relative;
+}
+
+.img{
+    height: 560px;
+    width:230px;
+    position: absolute;
+    top:24px;
+    left:135px;
+}
