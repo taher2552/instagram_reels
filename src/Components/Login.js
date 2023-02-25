@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./Css/Login.css";
 import phoneImage from "../images/phones.png";
@@ -7,6 +8,11 @@ import img3 from "../images/img3.png";
 import img4 from "../images/img4.png";
 import { Slide, Slider, CarouselProvider, Image } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import Card from '@mui/material/Card';
+import instaLogo from '../images/insta_logo.jpg';
+import { Button, CardActions, CardContent, TextField } from "@mui/material";
+
+
 
 export default class Login extends Component {
   render() {
@@ -51,7 +57,23 @@ export default class Login extends Component {
          
         </div>
 
-        <div className="loginCard">login cart</div>
+        <div className="loginCard">
+        <Card variant="outlined">
+          <div className="insta_logo">
+            <img src={instaLogo} alt="" />
+          </div>
+
+          <CardContent>
+            <TextField label="Email" variant="outlined" fullWidth={true} onChange={(e)=> this.setState({ email: e.target.value})}/>
+            <TextField label="Password" type="password" variant="outlined" fullWidth={true} onChange={(e)=> this.setState({password: e.target.value})}/>
+          </CardContent>
+
+          <CardActions>
+            <Button color="primary" fullWidth={true} variant="contained" onClick={this.handleClick}> Log in </Button> 
+            <Button color="primary" fullWidth={true} variant="contained" onClick={this.handleGoogleClick}> Login with google </Button>
+          </CardActions>
+        </Card>
+        </div>
       </div>
     );
   }
