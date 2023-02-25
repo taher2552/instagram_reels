@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/instagram_reels/static/css/main.7a24514b.css",
+    "main.js": "/instagram_reels/static/js/main.519dc078.js",
+    "static/media/img1.png": "/instagram_reels/static/media/img1.a015f55058ad24a00428.png",
+    "static/media/img4.png": "/instagram_reels/static/media/img4.d688ff1f110b88f3c0c9.png",
+    "static/media/img2.png": "/instagram_reels/static/media/img2.66d6eaaf896694188857.png",
+    "static/media/phones.png": "/instagram_reels/static/media/phones.f4b69b981c389b538d0e.png",
+    "static/media/img3.png": "/instagram_reels/static/media/img3.a8b4d779fa1026a205a2.png",
+    "index.html": "/instagram_reels/index.html",
+    "main.7a24514b.css.map": "/instagram_reels/static/css/main.7a24514b.css.map",
+    "main.519dc078.js.map": "/instagram_reels/static/js/main.519dc078.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a24514b.css",
+    "static/js/main.519dc078.js"
+  ]
+}
